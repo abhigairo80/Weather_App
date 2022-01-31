@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Weather Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="user">User</string>
+    <string name="welcome">Welcome</string>
+    <string name="location_here">Location here</string>
+    <string name="for_today">for today</string>
+    <string name="weather_report">Weather Report</string>
+    <string name="image">image</string>
+    <string name="_0_c">0°C</string>
+    <string name="location_name_country_name">location name , country name</string>
+    <string name="max_temp">MAX TEMP</string>
+    <string name="min_temp">MIN TEMP</string>
+    <string name="windSpeed">WIND SPEED</string>
+    <string name="pressure">PRESSURE</string>
+    <string name="humidity">HUMIDITY</string>
+    <string name="visibility">VISIBILITY</string>
+    <string name="see_7_day_report"><![CDATA[see 7-day report >]]></string>
+    <string name="hello">Hello</string>
+    <string name="condition">Condition</string>
+    <string name="max_temp_min_temp">MAX TEMP - MIN TEMP</string>
+    <string name="temperature">temperature</string>
+    <string name="description">description</string>
+    <string name="current_weather">Current Weather</string>
+    <string name="search_to_date">Search to Date</string>
+    <string name="_7_days_report">7-Days Report</string>
+    <string name="settings">Settings</string>
+    <string name="condition_in_location">Condition in Location</string>
+    <string name="_23_34_12">23/34/12</string>
+    <string name="hello_name">Hello Name</string>
+    <string name="hope_so_you_are_doing_great">Hope so you are doing great!</string>
+
+    <string name="control_unit">-Control unit :</string>
+    <string name="c">°C</string>
+    <string name="slash">/</string>
+    <string name="f">°F</string>
+    <string name="_7_day_report">7-Day Report</string>
+    <string name="for_your_location">for your Location</string>
+
+    <string-array name="cities">
+        <item>New Delhi</item>
+        <item>Mumbai</item>
+        <item>Noida</item>
+    </string-array>
+</resources>

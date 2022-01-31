@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/currentFragment">
+
+    <fragment
+        android:id="@+id/currentFragment"
+        android:name="com.complete.weatherapplication.ui.fragments.CurrentFragment"
+        android:label="fragment_current"
+        tools:layout="@layout/fragment_current" >
+        <action
+            android:id="@+id/action_currentFragment_to_reportfragment"
+            app:destination="@id/reportFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.complete.weatherapplication.ui.fragments.ReportFragment"
+        android:label="fragment_reportFragment"
+        tools:layout="@layout/fragment_report" >
+        <action
+            android:id="@+id/action_reportfragment_to_currentFragment"
+            app:destination="@id/currentFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/searchDateFragment"
+        android:name="com.complete.weatherapplication.ui.fragments.SearchDateFragment"
+        android:label="fragment_search_date"
+        tools:layout="@layout/fragment_search_date" >
+        <action
+            android:id="@+id/action_searchDateFragment_to_currentFragment"
+            app:destination="@id/currentFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.complete.weatherapplication.ui.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_currentFragment"
+            app:destination="@+id/currentFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"/>
+    </fragment>
+</navigation>
