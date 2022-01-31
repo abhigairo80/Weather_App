@@ -74,7 +74,7 @@ class SplashScreenActivity : Activity() {
                 AlertDialog.Builder(this)
                     .setTitle("Required Location Permission")
                     .setMessage("Grant Permission To Use Current Location, Else default Location will be used")
-                    .setPositiveButton("ok") { dialogInterface: DialogInterface?, i: Int ->
+                    .setPositiveButton("ok") { _: DialogInterface?, _: Int ->
 
                         ActivityCompat.requestPermissions(
                             this,
@@ -90,7 +90,7 @@ class SplashScreenActivity : Activity() {
                         }
                         startActivity(Intent(this, MainActivity::class.java))
                     }
-                    .setNegativeButton("cancel") { dialogInterface: DialogInterface?, i: Int ->
+                    .setNegativeButton("cancel") { _: DialogInterface?, _: Int ->
                         // permission not granted
                         Toast.makeText(
                             applicationContext,

@@ -15,8 +15,8 @@
     <string name="pressure">PRESSURE</string>
     <string name="humidity">HUMIDITY</string>
     <string name="visibility">VISIBILITY</string>
-    <string name="see_7_day_report"><![CDATA[see 7-day report >]]></string>
-    <string name="hello">Hello</string>
+    <string name="see_7_day_report">Check 7 Days Report</string>
+    <string name="hello">Hello ,</string>
     <string name="condition">Condition</string>
     <string name="max_temp_min_temp">MAX TEMP - MIN TEMP</string>
     <string name="temperature">temperature</string>

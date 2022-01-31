@@ -1,16 +1,19 @@
 package com.complete.weatherapplication.ui.fragments
 
 import android.content.Context
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+
 import androidx.navigation.Navigation
 import com.complete.weatherapplication.R
 import com.complete.weatherapplication.utils.Utils.Companion.SHARED
 import com.complete.weatherapplication.databinding.FragmentSettingsBinding
+
 
 class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
@@ -22,7 +25,8 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        //Inflating the binding
+
+
         _binding = FragmentSettingsBinding.inflate(inflater,container,false)
         //Checking on Click
         binding.edit.setOnClickListener{
@@ -51,7 +55,7 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         }
         val name = activity?.getSharedPreferences(SHARED,Context.MODE_PRIVATE)?.getString("name","username")
         binding.helloName.text = name
-        //Checking on Click
+
         binding.c.setOnClickListener {
             val sh = activity?.getSharedPreferences(SHARED,Context.MODE_PRIVATE)
             sh!!.edit().apply {
@@ -77,4 +81,9 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         _binding = null
         super.onDestroy()
     }
+
+
+
+
+
 }
